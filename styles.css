@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+.controls label {
+    margin-right: 5px;
+}
+
+.controls select, .controls input[type="range"] {
+    padding: 5px;
+}
+
+.controls button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.controls button:hover {
+    background-color: #555;
+}
+
+#array-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 500px;
+    padding: 20px;
+    background-color: #eaeaea;
+    overflow-x: auto;
+}
+
+.array-bar {
+    background-color: #69b3a2;
+    margin: 0 1px;
+    width: 5px;
+    transition: height 0.3s ease, background-color 0.3s ease;
+}
+
+.array-bar.active {
+    background-color: #d9534f;
+}
+
+.array-bar.pivot {
+    background-color: #f0ad4e;
+}
